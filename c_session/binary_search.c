@@ -22,16 +22,28 @@ int binary_search(int arr[], int size, int target)
 
 int main()
 {
-    int arr[] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+    int arr[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
     int size = sizeof(arr) / sizeof(arr[0]);
-    int target = 11;
+    int target;
+    int index;
+    int i;
 
-    int index = binary_search(arr, size, target);
+    printf("Ordered array: ");
+    for (i = 0; i < size; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    printf("Enter the value to search: ");
+    scanf("%d", &target);
+
+    index = binary_search(arr, size, target);
 
     if (index != -1)
         printf("Value %d found at index %d\n", target, index);
     else
-        printf("Value %d not found\n", target);
+        printf("Value %d not found in the array\n", target);
 
     return 0;
 }
