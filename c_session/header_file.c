@@ -1,16 +1,6 @@
-#include <stdio.h>
+#include "header_file.h"
 
-int sum(int, int);
-
-int sum(int x, int y)
+int sum_header(int a, int b)
 {
-return x+y;
-}
-
-
-int main ()
-{
-int a= 100, b=50;
-int result = sum(a,b);
-printf("%d\n",result);
+    return a + b;
 }
