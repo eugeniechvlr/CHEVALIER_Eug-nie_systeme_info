@@ -4,7 +4,7 @@ int loop(int, int);
 
 int loop(int x, int y)
 {
-    int i;
+    int i = x;
     while (i <= y)
     {
         printf("%d\n", i);
